@@ -22,83 +22,41 @@
 
         gtag('config', 'UA-137801768-2');
     </script>
+    <link rel="stylesheet" href="custom.css" />
 </head>
 
-<body>
-    <style>
-        * {
-            font-family: 'Work Sans', sans-serif;
-        }
-
-        .overlay-color-bg {
-            background-color: rgb(24, 23, 23);
-        }
-
-        .play-icon {
-            transform: rotateZ(90deg);
-            fill: white;
-            width: 39px;
-            height: 34px;
-            font-size: 10px;
-            margin-top: 0.60rem;
-        }
-
-        .font-stretch-100 {
-            font-stretch: 100%;
-        }
-
-        .featured-grid {
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(7, 1fr);
-            grid-template-areas:
-                "a a b b"
-                "1 2 3 4"
-                "5 6 7 8"
-            ;
-        }
-
-        .card-bg {
-            background-color: rgb(37, 37, 38);
-        }
-        /* some change */
-    </style>
+<body class="card-bg">
     <main>
-
-        <article class="overlay-color-bg text-white py-10">
-            <div class="flex flex-col sm:flex-row justify-center p-4">
-                <div class="sm:w-1/4 sm:mx-3 ">
-                    <div class="m-4">
-                        <h3 class="font-bold mb-4 font-stretch-100 text-justify text-3xl uppercase">
-                            Featured Work
-                        </h3>
-                        <p class="text-justify lh-sm font-light mb-8">
-                            “Mercedes” is an Indian Song narrating the action-packed revenge of a punjabi jatt. Pace of
-                            the video maintains harmony with music's tempo. Motion effects do a magnificent job of
-                            hightening the viewers interest just before the change of tone in lyrics. Taranveer is
-                            sophisticated director who has been amazing us since his debut with "Tainu Neend Ni Auni" in
-                            2017.
-                        </p>
-                        <!-- <p class="text-right py-2">
-                            - Taranveer Singh
-                        </p> -->
-                        <div class="flex justify-center">
-                            <a href="https://youtu.be/M3P0LpP0IJM">
-                                <button class="bg-white rounded-sm text-black px-6 py-2 font-light uppercase"
-                                    type="button">Watch</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="sm:w-1/2 w-full">
-                    <img class="object-cover" src="assets/p/youtube-mercedes.jpg.png" alt="preview featured video" />
-                </div>
-            </div>
-        </article>
         <article>
+            <div class="relative overflow-hidden">
+                <img class="w-full" src="assets/vj/kamera-red-scarlet-2105.jpg" alt="main video" />
+                <h2
+                    class="rounded-lg hidden bg-[rgba(0,0,0,0.2)] md:block absolute p-4 top-0 right-0 text-white animate-slide-from-right z-10 uppercase sm:text-5xl text-2xl font-lighter mb-4">
+                    SHOT ON 6K <span class="text-rose-600">RED</span><br />
+                    DIGITAL CINEMA<br />
+                    VIDEO CAMERAS
+                </h2>
+                <h2
+                    class="hidden bg-[rgba(0,0,0,0.2)] md:block absolute p-4 bottom-0 pb-28 pl-18 left-0 text-white animate-slide-from-left z-10 uppercase sm:text-2xl text-xl font-lighter mb-4">
+                    <div class="flex justify-between mb-8">
+                        <div>
+                            <span class="pb-0">Taranveer Singh</span> <br/>
+                            <span class="text-base">Music Video Director</span>
+                        </div>
+                        <a
+                            class="text-base uppercase border hover:bg-black text-white font-light m-3 lh-sm py-2 px-8 rounded-full focus:outline-none focus:shadow-outline"
+                            href="#contact-us-form">
+                            Get a quote
+                    </a>
+                    </div>
+                    <p class="text-xs">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste qui quia labore aliquam dolores,
+                        eligendi voluptatibus? Placeat quidem possimus assumenda autem quae. Odit praesentium distinctio
+                        ducimus eligendi, incidunt minus recusandae.
+                    </p>
+                </h2>
+            </div>
             <a href="https://youtu.be/Z0dGQC-EvEU">
-                <div class="overlay-color-bg w-full h-[80%] sm:px-10 rounded-lg">
-                    <img class="w-full object-cover" src="assets/p/8k blog pic_1.png" alt="main video" />
-                </div>
                 <div class="overlay-color-bg">
                     <div class="text-white flex justify-center p-6">
                         <div class="font-sans text-5xl font-bold ">
@@ -122,9 +80,48 @@
                 </div>
             </a>
         </article>
+
+
+        <article class="overlay-color-bg text-white sm:py-10 pb-6">
+            <div class="flex flex-col sm:flex-row justify-center p-4">
+                <div class="sm:w-1/4 sm:mx-3 ">
+                    <div class="m-4">
+                        <h3 class="font-bold mb-4 font-stretch-100 text-justify text-3xl uppercase">
+                            Featured Work
+                        </h3>
+                        <p class="text-justify text-xs lh-sm font-light">
+                            “Mercedes” is an Indian Song narrating the action-packed revenge of a punjabi jatt. Pace of
+                            the video maintains great harmony with the music's tempo. Motion effects do a magnificent
+                            job of
+                            hightening the viewer's interest just before the change of tone in lyrics. Taranveer Singh
+                            is
+                            sophisticated director who has been doing amazing work since his debut with "Tainu Neend Ni
+                            Auni" in
+                            2017.
+                        </p>
+                        <p class="text-right text-sm pt-4 pb-2 sm:mb-8 mb-4">
+                            - Dr. Vijay Nyaya
+                        </p>
+                        <div class="flex justify-center">
+                            <a href="https://youtu.be/M3P0LpP0IJM">
+                                <button class="bg-white rounded-sm text-black px-6 py-2 font-light uppercase"
+                                    type="button">Watch</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 w-full">
+                    <img class="object-cover" src="assets/p/youtube-mercedes.jpg.png" alt="preview featured video" />
+                </div>
+            </div>
+        </article>
+
+
+
         <article class="relative">
             <img class="w-full object-cover" src="assets/bumblebee.webp" />
         </article>
+
         <section>
             <h2 class="text-4xl font-bold uppercase text-white bg-black">
                 <div class="flex justify-center py-4">
@@ -134,44 +131,41 @@
             <div class="featured-grid">
             </div>
         </section>
-        <article class="w-full flex flex-col sm:flex-row text-right">
+
+        <article class="w-full flex flex-col sm:flex-row text-right overflow-hidden">
             <div class="card-bg text-white p-20 sm:min-w-[40%]">
                 <div>
-                    <h2 class="uppercase text-5xl font-semibold mb-4">
+                    <h2 class="uppercase sm:text-5xl text-3xl font-semibold mb-4">
                         STRESS-FREE PROCESS
                     </h2>
-                    <p class="text-xl font-light">
+                    <p class="sm:text-xl text-base font-light">
                         Making a music video might sound like a daunting process. Not with us! Working with us is
                         more like hanging out with friends that have nifty cameras.
                     </p>
                 </div>
             </div>
-            <div class="">
-                <img class="object-cover w-full" src="assets/p/pexels-ron-lach-8085942.jpg"
-                    alt="preview featured video" />
-            </div>
+            <img class="object-cover object-center" src="assets/p/pexels-ron-lach-8085942.jpg"
+                alt="preview featured video" />
         </article>
-        <article>
-            <div class="flex sm:flex-row-reverse flex-col-reverse">
-                <div class="card-bg text-white p-8 w-1/2">
-                    <div>
-                        <h2 class="uppercase text-5xl font-semibold mb-4">
-                            SHOT ON 6K <span class="text-rose-600">RED</span>
-                            DIGITAL CINEMA
-                            VIDEO CAMERAS
-                        </h2>
-                        <p class="text-xl font-light">
-                            They say it's not about the camera.. until you own a RED! Shooting on high-end cinema
-                            cameras gives us the flexibility for advanced color grading in post-production making each
-                            production look and feel like a movie.
-                        </p>
-                    </div>
-                </div>
-                <div class="">
-                    <img class="" src="assets/6k-red.webp" alt="preview featured video" />
+
+        <article class="flex sm:flex-row-reverse flex-col">
+            <div class="card-bg text-white p-8 w-1/2">
+                <div>
+                    <h2 class="uppercase sm:text-5xl text-2xl font-semibold mb-4">
+                        SHOT ON 6K <span class="text-rose-600">RED</span>
+                        DIGITAL CINEMA
+                        VIDEO CAMERAS
+                    </h2>
+                    <p class="text-base font-light">
+                        They say it's not about the camera.. until you own a RED! Shooting on high-end cinema
+                        cameras gives us the flexibility for advanced color grading in post-production making each
+                        production look and feel like a movie.
+                    </p>
                 </div>
             </div>
+            <img class="" src="assets/6k-red.webp" alt="preview featured video" /> </div>
         </article>
+
         <article>
             <div class="flex sm:flex-row flex-col">
                 <div class="card-bg text-white text-center p-24">
@@ -191,6 +185,7 @@
                 </div>
             </div>
         </article>
+
         <section class="flex flex-col sm:flex-row w-full">
             <div class="sm:w-1/3 relative">
                 <img class="object-cover h-full" src="assets/01.webp" alt="">
@@ -209,6 +204,7 @@
                     sauce</span>
             </div>
         </section>
+
         <section class="py-14 card-bg">
             <div class="card-bg text-white p-8">
                 <div class="w-3/4 mx-auto">
@@ -222,6 +218,7 @@
                 </div>
             </div>
         </section>
+
         <section>
             <div class="flex sm:flex-row flex-col">
                 <div class="">
@@ -243,10 +240,55 @@
                 </div>
             </div>
         </section>
-        <div class="py-8 text-xl w-full bg-black text-white text-center">Meet Us</div>
-        <iframe class="w-full" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB9CECvFFwXU_PWD-AiG1CAxNybwLHuGF4&q=AFILMBYX,Chandigarh">
-        </iframe>
+
+        <section class="flex flex-col w-full md:grid md:grid-cols-3 md:gap-0">
+            <div class="md:col-span-2">
+                <div class="py-8 text-xl  w-full bg-black text-white text-center">Meet Us</div>
+                <iframe class="w-full" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB9CECvFFwXU_PWD-AiG1CAxNybwLHuGF4&q=AFILMBYX,Chandigarh">
+                </iframe>
+            </div>
+
+            <div class="">
+                <div class="py-8 text-xl w-full bg-black text-white text-center">Contact Us</div>
+                <form id="contact-us-form" action="https://formspree.io/f/xeqnlvwy" method="POST"
+                    class="bg-white shadow-md rounded px-8  pt-6 pb-8 mb-4">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="your-email">
+                            Your Email:
+                        </label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="your-email" name="email" required type="email" placeholder="Email">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="your-subject">
+                            Subject:
+                        </label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="your-subject" name="subject" type="text" placeholder="Subject" maxlength="64">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="your-message">
+                            Message:
+                        </label>
+                        <textarea
+                            class="shadow appearance-none border overflow-auto rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                            id="your-message" name="message" rows="6" required></textarea>
+                    </div>
+                    <div class="flex items-center justify-end">
+                        <button
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                            type="submit">
+                            Send
+                        </button>
+                    </div>
+                    <p id="contact-us-status" class="text-center text-gray-700 text-base"></p>
+                </form>
+            </div>
+
+        </section>
     </main>
     <script defer src="/main.js"></script>
 </body>
